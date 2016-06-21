@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDEA"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imageButton_back"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:background="#FDA61C"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="12dp"
+            android:src="@drawable/abc_ic_ab_back_holo_dark" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="70"
+            android:background="#FDA61C"
+            android:gravity="center_vertical"
+            android:text="上传故事"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="20"
+            android:background="#FDA61C"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingTop="12dp"
+            android:text="发表" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="92"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#ffffff"
+                    android:hint="一起记录下你的故事名字"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="18sp" >
+                </EditText>
+                
+                 <EditText
+                    android:id="@+id/edit_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#ffffff"
+                    android:layout_below="@id/name"
+                    android:hint="那天我走在放学的小路上......"
+                    android:inputType="text"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:textSize="18sp" >
+                </EditText>
+
+               
+
+                <ImageView
+                        android:id="@+id/imageSwitch"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" 
+                    android:layout_below="@id/edit_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/addpic"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

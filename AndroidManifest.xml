@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.niuniu.skb_four"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.skb.ui.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.skb.ui.QueryMessage" >
+        </activity>
+        <activity android:name="com.skb.ui.MainActivity" >
+        </activity>
+        <activity android:name="com.skb.ui.GuideActivity" >
+        </activity>
+        <activity android:name="com.skb.ui.UserDetail" >
+        </activity>
+        <activity android:name="com.skb.ui.Works" >
+        </activity>
+        <activity android:name="com.skb.ui.Tab_collect" >
+        </activity>
+        <activity android:name="com.skb.ui.AddCondiment" >
+        </activity>
+        <activity android:name="com.skb.ui.AddFood" >
+        </activity>
+        <activity android:name="com.skb.ui.AddMethod" >
+        </activity>
+        <activity android:name="com.skb.ui.UploadMenu" >
+        </activity>
+        <activity android:name="com.skb.ui.PhotoPreviewActivity" >
+        </activity>
+        <activity android:name="com.skb.ui.PhotoSelectorActivity" >
+        </activity>
+        <activity android:name="com.skb.ui.UploadStory" >
+        </activity>
+        <activity android:name="com.skb.ui.Sort_Info" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FBFAEE">
+
+    <include
+        android:id="@+id/sort_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        layout="@layout/sort_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="91"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/sort_logo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sort_grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+			android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none"
+           android:listSelector="@android:color/transparent"
+            android:verticalSpacing="5dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="2"
+            ptr:ptrMode="both" >
+        </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+    </LinearLayout>
+
+</LinearLayout>

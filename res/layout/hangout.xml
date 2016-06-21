@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+		android:layout_height="0dp"
+        android:layout_weight="13"
+        android:background="#FDA61C"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="逛逛"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <!-- ad -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="56" >
+    </android.support.v4.view.ViewPager>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hangout_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120"
+        android:divider="@null"
+        android:focusable="false"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        ptr:ptrMode="both" />
+
+</LinearLayout>

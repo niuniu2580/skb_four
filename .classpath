@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="E:/Android/AndroidEnvironment/Bmob_AndroidSDK_V3.4.2_0727/Bmob_Push_V0.6beta_20150408.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/Android/AndroidEnvironment/Bmob_AndroidSDK_V3.4.2_0727/BmobSDK_V3.4.2_0727.jar"/>
+	<classpathentry kind="lib" path="E:/Android/AndroidEnvironment/universal-image-loader-1.9.3-with-sources.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

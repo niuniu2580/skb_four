@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <FrameLayout
+        android:id="@+id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+    </android.support.v4.app.FragmentTabHost>
+
+    <RadioGroup
+        android:id="@+id/radio_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#C5BDAB"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:paddingTop="10dp"
+            android:drawableTop="@drawable/tab_btn_first"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_senond"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_btn_second"
+            android:gravity="center"
+            android:text="收藏"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:paddingTop="10dp"
+            android:drawableTop="@drawable/tab_btn_third"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_fourth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_btn_fourth"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="逛逛"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_fifth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_btn_fifth"
+            android:gravity="center"
+            android:text="我的"
+            android:paddingTop="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>
